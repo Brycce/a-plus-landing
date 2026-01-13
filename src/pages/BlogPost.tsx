@@ -111,7 +111,7 @@ const BlogPost = () => {
             Join thousands of service businesses using A+ Reviews to automate their review collection and beat their competition.
           </p>
           <Link 
-            href="https://app.aplusreview.io/auth"
+            href="https://app.aplusreviews.io/auth"
             className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
           >
             Start Free Trial

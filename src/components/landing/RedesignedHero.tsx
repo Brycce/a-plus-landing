@@ -24,7 +24,7 @@ export function RedesignedHero() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4" asChild>
-                <a href="https://app.aplusreview.io/auth?tab=signup">
+                <a href="https://app.aplusreviews.io/auth?tab=signup">
                   Start free trial
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </a>

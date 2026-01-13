@@ -201,7 +201,7 @@ const Blog = () => {
             Get expert insights on Google reviews and business growth delivered to your inbox.
           </p>
           <Link 
-            href="https://app.aplusreview.io/auth"
+            href="https://app.aplusreviews.io/auth"
             className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
           >
             Start Free Trial

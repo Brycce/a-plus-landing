@@ -36,7 +36,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
                 Home
               </Link>
               <Link 
-                href="https://app.aplusreview.io/auth" 
+                href="https://app.aplusreviews.io/auth" 
                 className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
               >
                 Get Started
