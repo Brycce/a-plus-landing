@@ -95,7 +95,7 @@ export function RedesignedPricing() {
               size="lg"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Get started free</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Get started free</a>
             </Button>
             <p className="text-sm text-center text-gray-500 mb-8">No credit card required</p>
 
@@ -186,7 +186,7 @@ export function RedesignedPricing() {
                 size="lg"
                 asChild
               >
-                <a href="https://app.aplusreviews.io/auth?tab=signup">Start free trial</a>
+                <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start free trial</a>
               </Button>
               <p className="text-sm text-center text-primary mb-8">14-day free trial</p>
 
@@ -246,7 +246,7 @@ export function RedesignedPricing() {
               size="lg"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start free trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start free trial</a>
             </Button>
             <p className="text-sm text-center text-primary mb-8">14-day free trial</p>
 
@@ -273,7 +273,7 @@ export function RedesignedPricing() {
               Start automating your review collection and watch your business grow.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start your free trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start your free trial</a>
             </Button>
             <p className="text-sm text-gray-500 mt-4">No credit card required • Cancel anytime</p>
           </div>

@@ -34,10 +34,10 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
         
         <div className="hidden md:flex items-center gap-4">
           <Button variant="ghost" className="text-gray-600" asChild>
-            <a href="https://app.aplusreviews.io/auth?tab=signin">Sign in</a>
+            <a href="https://app.aplusreviews.io/auth?tab=signin&utm_source=landing&utm_medium=website">Sign in</a>
           </Button>
           <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
-            <a href="https://app.aplusreviews.io/auth?tab=signup">Start free trial</a>
+            <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start free trial</a>
           </Button>
         </div>
         

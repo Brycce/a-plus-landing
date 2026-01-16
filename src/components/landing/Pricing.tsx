@@ -71,7 +71,7 @@ const Pricing = () => {
               className="w-full mb-6"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Get Started Free</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Get Started Free</a>
             </Button>
             
             <div className="flex-grow">
@@ -140,7 +140,7 @@ const Pricing = () => {
               className="w-full mb-6 bg-primary hover:bg-primary/90"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start Free Trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start Free Trial</a>
             </Button>
             
             <div className="flex-grow">

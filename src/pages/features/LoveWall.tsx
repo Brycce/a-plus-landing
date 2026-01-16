@@ -28,10 +28,10 @@ const LoveWall = () => {
             </div>
             <div className="flex items-center gap-4">
               <Button variant="ghost" asChild>
-                <a href="https://app.aplusreviews.io/auth?tab=signin">Sign In</a>
+                <a href="https://app.aplusreviews.io/auth?tab=signin&utm_source=landing&utm_medium=website">Sign In</a>
               </Button>
               <Button asChild>
-                <a href="https://app.aplusreviews.io/auth?tab=signup">Get Started</a>
+                <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Get Started</a>
               </Button>
             </div>
           </div>
@@ -52,7 +52,7 @@ const LoveWall = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="text-lg px-8 bg-primary text-white hover:bg-primary/90" asChild>
-                  <a href="https://app.aplusreviews.io/auth?tab=signup">Start Free Trial</a>
+                  <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start Free Trial</a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8" asChild>
                   <Link to="/">← Back to Features</Link>
@@ -316,7 +316,7 @@ const LoveWall = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8 bg-primary text-white hover:bg-primary/90" asChild>
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start Free Trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start Free Trial</a>
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 text-foreground border-gray-300 hover:bg-gray-100" asChild>
               <Link to="/">View All Features</Link>

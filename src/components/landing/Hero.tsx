@@ -25,7 +25,7 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 sm:py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 asChild
               >
-                <a href="https://app.aplusreviews.io/auth?tab=signup">Get 3x More Reviews</a>
+                <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Get 3x More Reviews</a>
               </Button>
             </div>
 
