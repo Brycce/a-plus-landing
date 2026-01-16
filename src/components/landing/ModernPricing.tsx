@@ -77,7 +77,7 @@ const ModernPricing = () => {
               className="w-full glass border-0 hover:bg-white/20 text-lg font-semibold py-4"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start Free Trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start Free Trial</a>
             </Button>
 
           </div>
@@ -137,7 +137,7 @@ const ModernPricing = () => {
               className="w-full gradient-primary text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 text-lg font-semibold py-4 animate-pulse-glow"
               asChild
             >
-              <a href="https://app.aplusreviews.io/auth?tab=signup">Start Free Trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start Free Trial</a>
             </Button>
 
             {/* Glow effect */}

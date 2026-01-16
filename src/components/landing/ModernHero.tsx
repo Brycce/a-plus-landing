@@ -52,7 +52,7 @@ const ModernHero = () => {
                 className="gradient-primary text-white hover:shadow-2xl hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold animate-pulse-glow"
                 asChild
               >
-                <a href="https://app.aplusreviews.io/auth?tab=signup" className="flex items-center gap-2">
+                <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website" className="flex items-center gap-2">
                   Start Free Trial
                   <ArrowRight className="w-5 h-5" />
                 </a>
