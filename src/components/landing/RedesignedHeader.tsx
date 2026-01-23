@@ -13,7 +13,7 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/aplusblue.png" 
+              src="/images/aplusblue.png" 
               alt="A+ Reviews Logo" 
               className="w-6 h-6 sm:w-8 sm:h-8 rounded"
             />

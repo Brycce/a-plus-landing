@@ -44,7 +44,7 @@ const Hero = () => {
               {/* Left: Woman image */}
               <div className="flex-1">
                 <img 
-                  src="/lovable-uploads/2b564f02-bf8a-49bf-8e1f-886fa4db65e2.png" 
+                  src="/images/2b564f02-bf8a-49bf-8e1f-886fa4db65e2.png" 
                   alt="Happy customer" 
                   className="w-full h-40 sm:h-48 rounded-xl object-cover object-center"
                 />
@@ -78,7 +78,7 @@ const Hero = () => {
               <div className="w-full h-full flex items-center justify-center z-10 animate-fade-in">
                 <div className="bg-white rounded-xl p-0 shadow-lg border border-gray-100 relative w-full mx-8">
                   <img 
-                    src="/lovable-uploads/2b564f02-bf8a-49bf-8e1f-886fa4db65e2.png" 
+                    src="/images/2b564f02-bf8a-49bf-8e1f-886fa4db65e2.png" 
                     alt="Happy customer" 
                     className="w-full h-[24rem] xl:h-[28rem] rounded-xl object-cover object-center"
                   />

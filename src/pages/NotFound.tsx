@@ -18,7 +18,7 @@ const NotFound = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/aplusblue.png" 
+              src="/images/aplusblue.png" 
               alt="A+ Reviews Logo" 
               className="w-8 h-8 rounded"
             />

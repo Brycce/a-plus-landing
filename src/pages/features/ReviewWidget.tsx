@@ -23,7 +23,7 @@ const ReviewWidget = () => {
             <div className="flex items-center space-x-4">
               <Link to="/" className="flex items-center space-x-2">
                 <img 
-                  src="/lovable-uploads/aplusblue.png" 
+                  src="/images/aplusblue.png" 
                   alt="A+ Reviews Logo" 
                   className="w-8 h-8 rounded"
                 />
