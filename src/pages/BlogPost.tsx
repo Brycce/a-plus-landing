@@ -1,15 +1,15 @@
-import { useParams, Navigate } from 'react-router-dom';
-import { getBlogPostBySlug, getAllTags } from '@/data/blogPosts';
+import { useParams, Navigate, Link } from 'react-router-dom';
+import { getBlogPostBySlug } from '@/data/blogPosts';
 import BlogLayout from '@/components/blog/BlogLayout';
 import MarkdownContent from '@/components/blog/MarkdownContent';
 import SEOHead from '@/components/blog/SEOHead';
-import { Link } from 'react-router-dom';
 import { ArrowRight, Share2 } from 'lucide-react';
 import { useEffect } from 'react';
+import { Button } from '@/components/ui/button';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -36,13 +36,11 @@ const BlogPost = () => {
         console.log('Error sharing:', err);
       }
     } else {
-      // Fallback to copying URL
       navigator.clipboard.writeText(window.location.href);
       alert('Link copied to clipboard!');
     }
   };
 
-  // Generate JSON-LD structured data for SEO
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -90,33 +88,32 @@ const BlogPost = () => {
 
       <BlogLayout post={post} showBackButton>
         <MarkdownContent content={post.content} />
-        
-        {/* Share Button */}
-        <div className="flex justify-center pt-8 border-t mt-12">
-          <button 
+
+        {/* Share */}
+        <div className="flex justify-center pt-8 border-t border-gray-100 mt-12">
+          <button
             onClick={handleShare}
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-[#0040E6] transition-colors text-[15px] font-medium"
           >
             <Share2 className="w-4 h-4" />
             Share this article
           </button>
         </div>
 
-        {/* Call to Action */}
-        <div className="bg-primary/5 rounded-2xl p-8 mt-12 text-center border border-primary/10">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
+        {/* CTA */}
+        <div className="bg-gray-900 rounded-3xl p-10 mt-14 text-center">
+          <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">
             Ready to get more Google reviews?
           </h3>
-          <p className="text-muted-foreground mb-6 text-lg">
-            Join thousands of service businesses using A+ Reviews to automate their review collection and beat their competition.
+          <p className="text-gray-400 mb-8 text-lg max-w-lg mx-auto">
+            Start collecting reviews automatically with QR codes and SMS campaigns.
           </p>
-          <Link 
-            href="https://app.aplusreviews.io/auth"
-            className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
-          >
-            Start Free Trial
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+          <Button className="bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full px-8 h-12 text-[15px] font-semibold shadow-lg shadow-blue-500/20" asChild>
+            <Link to="/auth?tab=signup">
+              Start in 5 minutes
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
         </div>
       </BlogLayout>
     </>

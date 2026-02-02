@@ -3,49 +3,56 @@ import { Clock, TrendingUp, MessageSquare, Trophy } from "lucide-react";
 const benefits = [
   {
     icon: Clock,
-    title: "Stop chasing customers for reviews",
-    description: "Everything happens automatically after each job. No reminding, no awkward asks."
+    title: "Save 10+ hours per week",
+    description: "No more manually asking for reviews. Everything runs on autopilot after each job.",
+    accent: "bg-[#E8F0FE]",
+    iconColor: "text-[#0040E6]",
   },
   {
     icon: TrendingUp,
-    title: "Get 3x more reviews",
-    description: "Our customers see an average 300% increase in Google reviews within the first month."
+    title: "3x more reviews",
+    description: "Customers see an average 300% increase in Google reviews within the first month.",
+    accent: "bg-[#ECFDF5]",
+    iconColor: "text-emerald-600",
   },
   {
     icon: MessageSquare,
-    title: "Texts get read. Emails don't.",
-    description: "98% of texts are opened. That's why we use them."
+    title: "98% SMS open rate",
+    description: "SMS gets read. Email gets buried. Reach customers where they actually look.",
+    accent: "bg-[#FFF0E6]",
+    iconColor: "text-amber-600",
   },
   {
     icon: Trophy,
-    title: "Climb Google rankings",
-    description: "More reviews = higher ranking = more calls."
-  }
+    title: "Outrank competitors",
+    description: "More reviews boost your local search rankings and attract more customers organically.",
+    accent: "bg-[#F5F0FF]",
+    iconColor: "text-purple-600",
+  },
 ];
 
 export function RedesignedWhyChoose() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 lg:py-32 bg-[#FFF8F0]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl text-gray-900 mb-6">
-            Why businesses choose A+ Reviews
+          <p className="text-[#0040E6] font-semibold text-sm tracking-wide uppercase mb-4">Why A+ Reviews</p>
+          <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
+            Built for businesses that<br />run on reputation
           </h2>
-          <p className="text-xl text-gray-600">
-            You do 20 jobs a month. Maybe 2 customers leave a review on their own. With A+ Reviews, you'll get 8–12.
-          </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center">
-              <div className="flex items-center justify-center mb-6">
-                <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center">
-                  <benefit.icon className="h-8 w-8 text-primary" />
-                </div>
+            <div
+              key={index}
+              className="bg-white rounded-3xl p-8 border border-gray-100 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_-6px_rgba(0,0,0,0.08)] transition-all duration-300"
+            >
+              <div className={`w-14 h-14 ${benefit.accent} rounded-2xl flex items-center justify-center mb-6`}>
+                <benefit.icon className={`h-7 w-7 ${benefit.iconColor}`} />
               </div>
-              <h3 className="text-xl text-gray-900 mb-3">{benefit.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
+              <p className="text-gray-500 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>

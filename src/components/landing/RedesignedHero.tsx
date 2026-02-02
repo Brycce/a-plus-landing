@@ -8,91 +8,86 @@ export function RedesignedHero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
-    <section className="relative py-24 lg:py-32 bg-gradient-to-b from-blue-50/50 via-blue-50/20 to-white">
-      <div className="container mx-auto px-4">
+    <section className="relative overflow-hidden bg-[#FFF8F0]">
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FFE4CC] rounded-full blur-[120px] opacity-40 -translate-y-1/2 translate-x-1/4" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#D4E4FF] rounded-full blur-[100px] opacity-30 translate-y-1/2 -translate-x-1/4" />
+
+      <div className="container mx-auto px-4 pt-20 pb-24 lg:pt-28 lg:pb-32 relative">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl leading-tight text-gray-900">
-                More Reviews = <span className="text-primary">More Jobs</span>
-              </h1>
+          <Link to="/blog/google-reviews-beat-competition" className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200/60 rounded-full px-4 py-2 mb-8 shadow-sm hover:shadow-md transition-shadow">
+            <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+            <span className="text-sm font-medium text-gray-700">How 38 reviews can beat 75% of your competition</span>
+            <ArrowRight className="w-3.5 h-3.5 text-gray-400" />
+          </Link>
 
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Capture reviews in person. Catch the rest by text.
-              </p>
-            </div>
+          <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.08] font-bold text-gray-900 tracking-tight mb-6">
+            Get more reviews
+            <br />
+            <span className="text-[#0040E6]">the minute the job's done</span>
+          </h1>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-4" asChild>
-                <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">
-                  Start free trial
-                  <ArrowRight className="h-5 w-5 ml-2" />
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                See how it works
-              </Button>
-            </div>
+          <p className="text-xl lg:text-[22px] text-gray-500 leading-relaxed max-w-2xl mx-auto mb-10">
+            Capture reviews in-person with QR codes, then automatically follow up with SMS. Never miss an opportunity to grow your reputation.
+          </p>
 
-            <div className="pt-16">
-              {/* Demo Video */}
-              <div className="rounded-2xl shadow-2xl max-w-4xl mx-auto overflow-hidden group animate-fade-up opacity-0 [animation-delay:600ms] [animation-fill-mode:forwards]">
-                <div className="relative" style={{ aspectRatio: '1660/1080' }}>
-                  {!isPlaying ? (
-                    <div
-                      className="absolute inset-0 cursor-pointer z-10"
-                      onClick={() => {
-                        setIsPlaying(true);
-                        setTimeout(() => {
-                          videoRef.current?.play();
-                        }, 100);
-                      }}
-                    >
-                      {/* Dashboard screenshot background */}
-                      <img
-                        src="/dashboard-poster.jpg"
-                        alt="Dashboard Preview"
-                        className="w-full h-full object-cover"
-                      />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <Button
+              size="lg"
+              className="bg-[#0040E6] hover:bg-[#0033BF] text-white text-lg font-semibold rounded-full px-8 h-14 shadow-lg shadow-blue-500/20"
+              asChild
+            >
+              <Link to="/auth?tab=signup">
+                Start in 5 minutes
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg font-semibold rounded-full px-8 h-14 border-gray-300 text-gray-700 hover:bg-gray-50"
+            >
+              View demo
+            </Button>
+          </div>
 
-                      {/* Blue gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-600/40 to-transparent" />
+          <p className="text-sm text-gray-400 mb-16">No credit card required</p>
 
-                      {/* Play button and content */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        {/* Central play button */}
-                        <div className="relative mb-4 sm:mb-8 transform transition-all duration-300 group-hover:scale-110">
-                          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 bg-white rounded-full flex items-center justify-center shadow-2xl">
-                            <Play className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-blue-600 ml-1 sm:ml-1.5 md:ml-2" fill="currentColor" />
-                          </div>
-                          {/* Subtle pulsing ring effect */}
-                          <div className="absolute inset-0 rounded-full bg-white/20 animate-pulse" />
-                        </div>
-
-                        {/* Text overlay at bottom */}
-                        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white text-center">
-                          <div className="max-w-2xl mx-auto">
-                            <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 drop-shadow-lg">
-                              See how A+ Reviews works
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-
+          <div className="rounded-3xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.15)] max-w-4xl mx-auto overflow-hidden bg-white border border-gray-200/50 animate-fade-up opacity-0 [animation-delay:400ms] [animation-fill-mode:forwards]">
+            <div className="relative" style={{ aspectRatio: '1660/1080' }}>
+              {!isPlaying ? (
+                <div
+                  className="absolute inset-0 cursor-pointer z-10 group"
+                  onClick={() => {
+                    setIsPlaying(true);
+                    setTimeout(() => videoRef.current?.play(), 100);
+                  }}
+                >
+                  <img
+                    src="/dashboard-poster.jpg"
+                    alt="Dashboard Preview"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-gray-900/20 to-transparent" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-8 h-8 md:w-10 md:h-10 text-[#0040E6] ml-1" fill="currentColor" />
                     </div>
-                  ) : null}
-
-                  <video
-                    ref={videoRef}
-                    className="w-full h-full object-contain bg-black"
-                    controls
-                    style={{ display: isPlaying ? 'block' : 'none' }}
-                  >
-                    <source src="/a-plus-demo-long.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white text-center">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-lg">
+                      See how it works in 2 minutes
+                    </h3>
+                  </div>
                 </div>
-              </div>
+              ) : null}
+              <video
+                ref={videoRef}
+                className="w-full h-full object-contain bg-black"
+                controls
+                style={{ display: isPlaying ? 'block' : 'none' }}
+              >
+                <source src="/a-plus-demo-long.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>

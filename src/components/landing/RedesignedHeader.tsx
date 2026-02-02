@@ -1,50 +1,69 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 interface RedesignedHeaderProps {
   onScrollToPricing?: () => void;
 }
 
 export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
-    <header className="w-full border-b border-gray-100 bg-white sticky top-0 z-50">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="w-full bg-white sticky top-0 z-50 shadow-[0_1px_0_0_rgba(0,0,0,0.06)]">
+      <div className="container mx-auto px-4 h-[72px] flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-            <img 
-              src="/images/aplusblue.png" 
-              alt="A+ Reviews Logo" 
-              className="w-6 h-6 sm:w-8 sm:h-8 rounded"
-            />
-            <span className="text-xl text-gray-900 font-semibold">A+ Reviews</span>
-          </div>
+          <img
+            src="/lovable-uploads/aplusblue.png"
+            alt="A+ Reviews Logo"
+            className="w-8 h-8 rounded-lg"
+          />
+          <span className="text-[22px] text-gray-900 font-bold tracking-tight">A+ Reviews</span>
         </div>
-        
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
-          <button 
+
+        <nav className="hidden md:flex items-center gap-10">
+          <a href="#how-it-works" className="text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors">How it works</a>
+          <a href="#features" className="text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors">Features</a>
+          <button
             onClick={onScrollToPricing}
-            className="text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
+            className="text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
           >
             Pricing
           </button>
-          <Link to="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">Blog</Link>
+          <Link to="/blog" className="text-[15px] font-medium text-gray-600 hover:text-gray-900 transition-colors">Blog</Link>
         </nav>
-        
-        <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" className="text-gray-600" asChild>
-            <a href="https://app.aplusreviews.io/auth?tab=signin&utm_source=landing&utm_medium=website">Sign in</a>
+
+        <div className="hidden md:flex items-center gap-3">
+          <Button variant="ghost" className="text-[15px] font-medium text-gray-700 hover:text-gray-900" asChild>
+            <Link to="/auth?tab=signin">Sign in</Link>
           </Button>
-          <Button className="bg-primary hover:bg-primary/90 text-white" asChild>
-            <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start free trial</a>
+          <Button className="bg-[#0040E6] hover:bg-[#0033BF] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
+            <Link to="/auth?tab=signup">Get started</Link>
           </Button>
         </div>
-        
-        <button className="md:hidden">
-          <Menu className="h-6 w-6" />
+
+        <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
+          {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
+
+      {mobileOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100 px-4 py-6 space-y-4 animate-fade-in">
+          <a href="#how-it-works" className="block text-[15px] font-medium text-gray-700 py-2" onClick={() => setMobileOpen(false)}>How it works</a>
+          <a href="#features" className="block text-[15px] font-medium text-gray-700 py-2" onClick={() => setMobileOpen(false)}>Features</a>
+          <button onClick={() => { onScrollToPricing?.(); setMobileOpen(false); }} className="block text-[15px] font-medium text-gray-700 py-2 w-full text-left">Pricing</button>
+          <Link to="/blog" className="block text-[15px] font-medium text-gray-700 py-2">Blog</Link>
+          <div className="pt-4 border-t border-gray-100 space-y-3">
+            <Button variant="outline" className="w-full rounded-full" asChild>
+              <Link to="/auth?tab=signin">Sign in</Link>
+            </Button>
+            <Button className="w-full bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full" asChild>
+              <Link to="/auth?tab=signup">Get started</Link>
+            </Button>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
