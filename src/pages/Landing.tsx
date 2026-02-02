@@ -1,5 +1,6 @@
 import { RedesignedHeader } from "@/components/landing/RedesignedHeader";
 import { RedesignedHero } from "@/components/landing/RedesignedHero";
+import { RedesignedWhyInPerson } from "@/components/landing/RedesignedWhyInPerson";
 import { RedesignedHowItWorks } from "@/components/landing/RedesignedHowItWorks";
 import { RedesignedWhyChoose } from "@/components/landing/RedesignedWhyChoose";
 import { RedesignedFeatures } from "@/components/landing/RedesignedFeatures";
@@ -23,6 +24,7 @@ const Landing = () => {
       
       <main>
         <RedesignedHero />
+        <RedesignedWhyInPerson />
         <RedesignedHowItWorks />
         <RedesignedWhyChoose />
         <RedesignedFeatures />

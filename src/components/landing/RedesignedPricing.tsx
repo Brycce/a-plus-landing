@@ -178,7 +178,7 @@ export function RedesignedPricing() {
                   </p>
                 )}
                 {!isAnnual && <p className="text-sm text-gray-500 mb-3">&nbsp;</p>}
-                <p className="text-gray-600">Start collecting reviews automatically</p>
+                <p className="text-gray-600">Up to 100 text requests per month</p>
               </div>
 
               <Button
@@ -238,7 +238,7 @@ export function RedesignedPricing() {
                 </p>
               )}
               {!isAnnual && <p className="text-sm text-gray-500 mb-3">&nbsp;</p>}
-              <p className="text-gray-600">Scale your reputation on autopilot</p>
+              <p className="text-gray-600">Up to 300 text requests per month</p>
             </div>
 
             <Button
@@ -268,14 +268,13 @@ export function RedesignedPricing() {
 
         <div className="text-center mt-20">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">Ready to get more reviews?</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">You're leaving reviews on the table</h3>
             <p className="text-gray-600 mb-8">
-              Start automating your review collection and watch your business grow.
+              Your competitors are collecting reviews right now. Cancel anytime.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
-              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start your free trial</a>
+              <a href="https://app.aplusreviews.io/auth?tab=signup&utm_source=landing&utm_medium=website">Start free trial</a>
             </Button>
-            <p className="text-sm text-gray-500 mt-4">No credit card required • Cancel anytime</p>
           </div>
         </div>
       </div>

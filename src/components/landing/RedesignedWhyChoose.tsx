@@ -3,8 +3,8 @@ import { Clock, TrendingUp, MessageSquare, Trophy } from "lucide-react";
 const benefits = [
   {
     icon: Clock,
-    title: "Save 10+ hours per week",
-    description: "No more manually asking customers for reviews. Everything happens automatically after each appointment."
+    title: "Stop chasing customers for reviews",
+    description: "Everything happens automatically after each job. No reminding, no awkward asks."
   },
   {
     icon: TrendingUp,
@@ -13,13 +13,13 @@ const benefits = [
   },
   {
     icon: MessageSquare,
-    title: "98% SMS open rate",
-    description: "SMS gets read. Email gets ignored. Reach customers where they actually look."
+    title: "Texts get read. Emails don't.",
+    description: "98% of texts are opened. That's why we use them."
   },
   {
     icon: Trophy,
-    title: "Outrank your competition",
-    description: "More reviews help you climb local search rankings and attract more customers."
+    title: "Climb Google rankings",
+    description: "More reviews = higher ranking = more calls."
   }
 ];
 
@@ -32,7 +32,7 @@ export function RedesignedWhyChoose() {
             Why businesses choose A+ Reviews
           </h2>
           <p className="text-xl text-gray-600">
-            Stop hoping for reviews and start generating them automatically with our proven SMS automation system.
+            You do 20 jobs a month. Maybe 2 customers leave a review on their own. With A+ Reviews, you'll get 8–12.
           </p>
         </div>
         

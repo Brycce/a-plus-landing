@@ -5,43 +5,43 @@ import { StaticMockup } from './StaticMockups';
 const features = [
   {
     icon: QrCode,
-    title: "In-Person QR Code Reviews",
-    description: "Catch customers at their happiest moment - right after job completion. Team members get job-specific QR codes that lead directly to your Google review page. It's the easiest way to turn satisfied customers into 5-star reviews.",
+    title: "QR codes your techs can show",
+    description: "Each job gets a unique QR code. Customer scans it, lands on your Google page, leaves a review. Done in 30 seconds.",
     features: ["Job-specific QR codes", "Direct to Google", "Team leaderboards", "Real-time tracking"],
     plan: "Pro"
   },
   {
     icon: MessageSquare,
-    title: "Multi-Touch SMS Campaigns",
-    description: "For customers who slip through the cracks, automated SMS sequences follow up at optimal times. Set it once and watch reviews roll in automatically - no manual work required.",
-    features: ["Multi-step sequences", "Smart timing", "Auto-stop on click", "Custom templates"],
+    title: "Automatic text reminders",
+    description: "Customer didn't scan? We follow up by text at the right time. Set it once, it runs on its own. Stops when they review.",
+    features: ["Multi-step sequences", "Smart timing", "Auto-stop on review", "Custom templates"],
     plan: "Pro"
   },
   {
     icon: Users,
-    title: "Review Boost",
-    description: "Unlock hundreds of reviews from your existing customer base. Import past customers and launch targeted campaigns to instantly boost your online reputation.",
+    title: "Get reviews from past customers",
+    description: "Import your customer list and send review requests in bulk. Great for catching up on months of missed reviews.",
     features: ["Jobber & CSV import", "Bulk campaigns", "Smart filtering", "Performance tracking"],
     plan: "Pro"
   },
   {
     icon: Heart,
-    title: "Love Wall",
-    description: "Convert website visitors into customers with stunning review displays that build instant trust and credibility. Showcase your reputation where it matters most.",
+    title: "Show reviews on your website",
+    description: "Display your best reviews on your site so visitors see the proof before they call.",
     features: ["Animated masonry", "Multiple styles", "Mobile carousel", "Custom branding"],
     plan: "Free"
   },
   {
     icon: Layout,
-    title: "Review Widget",
-    description: "Capture attention and build confidence with floating review widgets that highlight your best customer feedback without overwhelming your site design.",
+    title: "Floating review widget",
+    description: "A small popup that shows real reviews as visitors browse your site. Builds trust without getting in the way.",
     features: ["Floating animations", "Hover effects", "Dismissible", "Real reviews"],
     plan: "Free"
   },
   {
     icon: BarChart3,
-    title: "Analytics & Insights",
-    description: "Make data-driven decisions with detailed performance metrics that show exactly how your review strategy is driving more customers and revenue.",
+    title: "See what's working",
+    description: "Track how many reviews you're getting, which techs are collecting the most, and where customers are coming from.",
     features: ["Review metrics", "Click tracking", "Rating trends", "Real-time sync"],
     plan: "Free"
   }
@@ -56,7 +56,7 @@ export function RedesignedFeatures() {
             Everything you need to get more reviews
           </h2>
           <p className="text-xl text-gray-600">
-            A complete review automation platform built for local businesses
+            Everything you need, nothing you don't.
           </p>
         </div>
         
@@ -98,11 +98,11 @@ export function RedesignedFeatures() {
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                 <StaticMockup
                   type={
-                    feature.title === "In-Person QR Code Reviews" ? "qr-codes" :
-                    feature.title === "Multi-Touch SMS Campaigns" ? "sms-automation" :
-                    feature.title === "Review Boost" ? "review-boost" :
-                    feature.title === "Love Wall" ? "love-wall" :
-                    feature.title === "Review Widget" ? "widget" :
+                    feature.title === "QR codes your techs can show" ? "qr-codes" :
+                    feature.title === "Automatic text reminders" ? "sms-automation" :
+                    feature.title === "Get reviews from past customers" ? "review-boost" :
+                    feature.title === "Show reviews on your website" ? "love-wall" :
+                    feature.title === "Floating review widget" ? "widget" :
                     "analytics"
                   }
                 />

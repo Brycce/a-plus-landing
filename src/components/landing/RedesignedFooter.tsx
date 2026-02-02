@@ -16,7 +16,7 @@ export function RedesignedFooter() {
               <span className="text-xl font-semibold text-gray-900">A+ Reviews</span>
             </div>
             <p className="text-gray-600">
-              Automate your review collection and grow your business with SMS campaigns that actually work.
+              Get more Google reviews. Get more jobs.
             </p>
           </div>
           
@@ -50,7 +50,7 @@ export function RedesignedFooter() {
         
         <div className="border-t border-gray-200 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-600 text-sm">
-            © 2024 A+ Reviews. All rights reserved.
+            © 2025 A+ Reviews. All rights reserved.
           </p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <span className="text-gray-600 text-sm">Made for local businesses</span>

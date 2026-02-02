@@ -5,14 +5,14 @@ const steps = [
   {
     icon: <QrCode className="w-12 h-12 text-primary" />,
     number: "1",
-    title: "QR Codes at the Door",
-    description: "Every job gets a unique QR code. Customers scan instantly after completion and leave a review right there on the spot. No friction, no follow-up needed."
+    title: "QR code at the door",
+    description: "Your tech shows a code after the job. Customer scans, leaves a review, done."
   },
   {
     icon: <MessageSquare className="w-12 h-12 text-primary" />,
     number: "2",
-    title: "Smart SMS Backup",
-    description: "SMS campaigns follow up automatically if they don't scan. Customize message count and timing. Stops when they review."
+    title: "Automatic text follow-up",
+    description: "Customer didn't scan? We text them so you don't have to. Stops when they review."
   }
 ];
 

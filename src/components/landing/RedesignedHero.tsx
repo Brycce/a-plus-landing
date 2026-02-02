@@ -14,11 +14,11 @@ export function RedesignedHero() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-7xl leading-tight text-gray-900">
-                Get <span className="text-primary">3x more reviews</span> with multi-touch collection
+                More Reviews = <span className="text-primary">More Jobs</span>
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Capture reviews in-person with QR codes at the door, then automatically follow up with SMS campaigns when they slip through the cracks. Never miss an opportunity.
+                Capture reviews in person. Catch the rest by text.
               </p>
             </div>
 
@@ -30,7 +30,7 @@ export function RedesignedHero() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                View demo
+                See how it works
               </Button>
             </div>
 
@@ -73,7 +73,7 @@ export function RedesignedHero() {
                         <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white text-center">
                           <div className="max-w-2xl mx-auto">
                             <h3 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 drop-shadow-lg">
-                              Transform Your Business with 3x More Reviews
+                              See how A+ Reviews works
                             </h3>
                           </div>
                         </div>
