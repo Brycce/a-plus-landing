@@ -10,7 +10,7 @@ export function RedesignedFooter() {
               <img
                 src="/images/aplusblue.png"
                 alt="A+ Reviews Logo"
-                className="w-8 h-8 rounded-lg"
+                className="w-8 h-8 rounded"
               />
               <span className="text-xl font-bold tracking-tight">A+ Reviews</span>
             </div>

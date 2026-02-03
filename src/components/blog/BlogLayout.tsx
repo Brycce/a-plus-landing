@@ -20,7 +20,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
       <header className="w-full bg-white sticky top-0 z-50 shadow-[0_1px_0_0_rgba(0,0,0,0.06)]">
         <div className="container mx-auto px-4 h-[72px] flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/images/aplusblue.png" alt="A+ Reviews Logo" className="w-8 h-8 rounded-lg" />
+            <img src="/images/aplusblue.png" alt="A+ Reviews Logo" className="w-8 h-8 rounded" />
             <span className="text-[22px] text-gray-900 font-bold tracking-tight">A+ Reviews</span>
           </Link>
 
@@ -135,7 +135,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
             <div className="space-y-5">
               <Link to="/" className="flex items-center gap-2.5">
-                <img src="/images/aplusblue.png" alt="A+ Reviews Logo" className="w-8 h-8 rounded-lg" />
+                <img src="/images/aplusblue.png" alt="A+ Reviews Logo" className="w-8 h-8 rounded" />
                 <span className="text-xl font-bold tracking-tight">A+ Reviews</span>
               </Link>
               <p className="text-gray-400 leading-relaxed text-[15px]">

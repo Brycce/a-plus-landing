@@ -17,7 +17,7 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
           <img
             src="/images/aplusblue.png"
             alt="A+ Reviews Logo"
-            className="w-8 h-8 rounded-lg"
+            className="w-8 h-8 rounded"
           />
           <span className="text-[22px] text-gray-900 font-bold tracking-tight">A+ Reviews</span>
         </div>
