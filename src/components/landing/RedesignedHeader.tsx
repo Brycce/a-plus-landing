@@ -38,7 +38,7 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
           <Button variant="ghost" className="text-[15px] font-medium text-gray-700 hover:text-gray-900" asChild>
             <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
           </Button>
-          <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
+          <Button className="bg-[#3C83F6] hover:bg-[#2563EB] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
             <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
           </Button>
         </div>
@@ -58,7 +58,7 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
             <Button variant="outline" className="w-full rounded-full" asChild>
               <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
             </Button>
-            <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full" asChild>
+            <Button className="w-full bg-[#3C83F6] hover:bg-[#2563EB] text-white rounded-full" asChild>
               <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
             </Button>
           </div>

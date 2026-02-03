@@ -93,7 +93,7 @@ const BlogPost = () => {
         <div className="flex justify-center pt-8 border-t border-gray-100 mt-12">
           <button
             onClick={handleShare}
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-[#2563EB] transition-colors text-[15px] font-medium"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-[#3C83F6] transition-colors text-[15px] font-medium"
           >
             <Share2 className="w-4 h-4" />
             Share this article
@@ -108,7 +108,7 @@ const BlogPost = () => {
           <p className="text-gray-400 mb-8 text-lg max-w-lg mx-auto">
             Start collecting reviews automatically with QR codes and SMS campaigns.
           </p>
-          <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full px-8 h-12 text-[15px] font-semibold shadow-lg shadow-blue-500/20" asChild>
+          <Button className="bg-[#3C83F6] hover:bg-[#2563EB] text-white rounded-full px-8 h-12 text-[15px] font-semibold shadow-lg shadow-blue-500/20" asChild>
             <Link to="https://app.aplusreviews.io/auth?tab=signup">
               Start in 5 minutes
               <ArrowRight className="w-4 h-4 ml-2" />

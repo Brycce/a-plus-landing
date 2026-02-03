@@ -35,7 +35,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
             <Button variant="ghost" className="text-[15px] font-medium text-gray-700 hover:text-gray-900" asChild>
               <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
             </Button>
-            <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
+            <Button className="bg-[#3C83F6] hover:bg-[#2563EB] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
               <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
             </Button>
           </div>
@@ -55,7 +55,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
               <Button variant="outline" className="w-full rounded-full" asChild>
                 <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
               </Button>
-              <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full" asChild>
+              <Button className="w-full bg-[#3C83F6] hover:bg-[#2563EB] text-white rounded-full" asChild>
                 <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
               </Button>
             </div>
@@ -78,7 +78,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
           <article className="mb-12">
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-6 text-sm">
-                <span className="bg-[#E8F0FE] text-[#2563EB] px-3 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">
+                <span className="bg-[#E8F0FE] text-[#3C83F6] px-3 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">
                   {post.category}
                 </span>
                 <div className="flex items-center gap-1 text-gray-400">
@@ -120,7 +120,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
               </div>
             </header>
 
-            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#2563EB] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-li:text-gray-600">
+            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#3C83F6] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-li:text-gray-600">
               {children}
             </div>
           </article>

@@ -57,7 +57,7 @@ const Blog = () => {
       <BlogLayout>
         {/* Hero */}
         <div className="text-center mb-20">
-          <p className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase mb-4">Blog</p>
+          <p className="text-[#3C83F6] font-semibold text-sm tracking-wide uppercase mb-4">Blog</p>
           <h1 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
             Insights for growing your<br />online reputation
           </h1>
@@ -75,10 +75,10 @@ const Blog = () => {
             >
               <div className="p-6 lg:p-8">
                 <div className="flex items-center gap-3 mb-5">
-                  <span className="bg-[#2563EB] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                  <span className="bg-[#3C83F6] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                     Featured
                   </span>
-                  <span className="text-[#2563EB] font-semibold text-xs uppercase tracking-wider">
+                  <span className="text-[#3C83F6] font-semibold text-xs uppercase tracking-wider">
                     {featuredPost.category}
                   </span>
                 </div>
@@ -107,7 +107,7 @@ const Blog = () => {
                   <span>{featuredPost.author}</span>
                 </div>
 
-                <span className="inline-flex items-center gap-2 bg-[#2563EB] text-white px-6 py-3 rounded-full font-semibold text-[15px] shadow-lg shadow-blue-500/20">
+                <span className="inline-flex items-center gap-2 bg-[#3C83F6] text-white px-6 py-3 rounded-full font-semibold text-[15px] shadow-lg shadow-blue-500/20">
                   Read article
                   <ArrowRight className="w-4 h-4" />
                 </span>
@@ -127,11 +127,11 @@ const Blog = () => {
                   to={`/blog/${post.slug}`}
                   className="bg-white rounded-2xl p-5 border border-gray-100 shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_-6px_rgba(0,0,0,0.08)] transition-all duration-300 group"
                 >
-                  <span className="bg-[#E8F0FE] text-[#2563EB] px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider">
+                  <span className="bg-[#E8F0FE] text-[#3C83F6] px-2.5 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider">
                     {post.category}
                   </span>
 
-                  <h3 className="text-lg font-bold text-gray-900 mt-3 mb-2 leading-tight tracking-tight group-hover:text-[#2563EB] transition-colors">
+                  <h3 className="text-lg font-bold text-gray-900 mt-3 mb-2 leading-tight tracking-tight group-hover:text-[#3C83F6] transition-colors">
                     {post.title}
                   </h3>
 
@@ -154,7 +154,7 @@ const Blog = () => {
                     </div>
                   </div>
 
-                  <span className="inline-flex items-center gap-2 text-[#2563EB] font-semibold text-sm group-hover:gap-3 transition-all">
+                  <span className="inline-flex items-center gap-2 text-[#3C83F6] font-semibold text-sm group-hover:gap-3 transition-all">
                     Read more
                     <ArrowRight className="w-3.5 h-3.5" />
                   </span>
@@ -172,7 +172,7 @@ const Blog = () => {
           <p className="text-gray-400 mb-8 text-lg max-w-lg mx-auto">
             Start collecting more Google reviews automatically with QR codes and SMS campaigns.
           </p>
-          <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20" asChild>
+          <Button className="bg-[#3C83F6] hover:bg-[#2563EB] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20" asChild>
             <Link to="https://app.aplusreviews.io/auth?tab=signup">
               Start in 5 minutes
               <ArrowRight className="w-5 h-5 ml-2" />

@@ -57,7 +57,7 @@ export function RedesignedFeatures() {
     <section id="features" className="py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase mb-4">Features</p>
+          <p className="text-[#3C83F6] font-semibold text-sm tracking-wide uppercase mb-4">Features</p>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
             Everything you need to<br />grow your reputation
           </h2>
@@ -73,11 +73,11 @@ export function RedesignedFeatures() {
                 <div className="space-y-6">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center">
-                      <feature.icon className="h-6 w-6 text-[#2563EB]" />
+                      <feature.icon className="h-6 w-6 text-[#3C83F6]" />
                     </div>
                     <span className={`text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full ${
                       feature.tag === "Pro"
-                        ? "bg-[#2563EB] text-white"
+                        ? "bg-[#3C83F6] text-white"
                         : "bg-emerald-50 text-emerald-700"
                     }`}>
                       {feature.tag}
@@ -95,7 +95,7 @@ export function RedesignedFeatures() {
                   <div className="grid grid-cols-2 gap-3 pt-2">
                     {feature.bullets.map((item, i) => (
                       <div key={i} className="flex items-center gap-2.5">
-                        <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-[#3C83F6] rounded-full flex-shrink-0" />
                         <span className="text-gray-600 text-[15px]">{item}</span>
                       </div>
                     ))}

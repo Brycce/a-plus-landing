@@ -6,7 +6,7 @@ const benefits = [
     title: "Save 10+ hours per week",
     description: "No more manually asking for reviews. Everything runs on autopilot after each job.",
     accent: "bg-[#E8F0FE]",
-    iconColor: "text-[#2563EB]",
+    iconColor: "text-[#3C83F6]",
   },
   {
     icon: TrendingUp,
@@ -36,7 +36,7 @@ export function RedesignedWhyChoose() {
     <section className="py-24 lg:py-32 bg-[#FFF8F0]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase mb-4">Why A+ Reviews</p>
+          <p className="text-[#3C83F6] font-semibold text-sm tracking-wide uppercase mb-4">Why A+ Reviews</p>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
             Built for businesses that<br />run on reputation
           </h2>
