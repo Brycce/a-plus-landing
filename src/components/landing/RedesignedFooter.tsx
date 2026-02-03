@@ -8,7 +8,7 @@ export function RedesignedFooter() {
           <div className="space-y-5">
             <div className="flex items-center gap-2.5">
               <img
-                src="/lovable-uploads/aplusblue.png"
+                src="/images/aplusblue.png"
                 alt="A+ Reviews Logo"
                 className="w-8 h-8 rounded-lg"
               />
