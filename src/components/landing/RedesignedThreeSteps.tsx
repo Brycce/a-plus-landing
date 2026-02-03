@@ -1,4 +1,3 @@
-import { Users, MessageSquare, QrCode } from "lucide-react";
 import { useState, useEffect } from "react";
 import { StaticMockup } from './StaticMockups';
 

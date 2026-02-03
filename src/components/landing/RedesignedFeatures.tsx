@@ -1,9 +1,7 @@
-import { MessageSquare, Users, Heart, Layout, BarChart3, QrCode } from "lucide-react";
 import { StaticMockup } from './StaticMockups';
 
 const features = [
   {
-    icon: QrCode,
     title: "In-Person QR Code Reviews",
     description: "Catch customers at their happiest — right after job completion. Team members get job-specific QR codes that lead directly to your Google review page.",
     bullets: ["Job-specific QR codes", "Direct to Google", "Team leaderboards", "Real-time tracking"],
@@ -11,7 +9,6 @@ const features = [
     mockup: "qr-codes" as const,
   },
   {
-    icon: MessageSquare,
     title: "Multi-Touch SMS Campaigns",
     description: "For customers who slip through the cracks, automated SMS sequences follow up at optimal times. Set it once and watch reviews roll in.",
     bullets: ["Multi-step sequences", "Smart timing", "Auto-stop on click", "Custom templates"],
@@ -19,7 +16,6 @@ const features = [
     mockup: "sms-automation" as const,
   },
   {
-    icon: Users,
     title: "Review Boost",
     description: "Unlock hundreds of reviews from your existing customer base. Import past customers and launch targeted campaigns.",
     bullets: ["Jobber & CSV import", "Bulk campaigns", "Smart filtering", "Performance tracking"],
@@ -27,7 +23,6 @@ const features = [
     mockup: "review-boost" as const,
   },
   {
-    icon: Heart,
     title: "Love Wall",
     description: "Showcase your best reviews on your website with a stunning, animated display that builds instant trust with visitors.",
     bullets: ["Animated masonry", "Multiple styles", "Mobile carousel", "Custom branding"],
@@ -35,7 +30,6 @@ const features = [
     mockup: "love-wall" as const,
   },
   {
-    icon: Layout,
     title: "Review Widget",
     description: "Floating review widgets highlight your best feedback without overwhelming your site design. Subtle and effective.",
     bullets: ["Floating animations", "Hover effects", "Dismissible", "Real reviews"],
@@ -43,7 +37,6 @@ const features = [
     mockup: "widget" as const,
   },
   {
-    icon: BarChart3,
     title: "Analytics & Insights",
     description: "Detailed performance metrics show exactly how your review strategy is driving growth.",
     bullets: ["Review metrics", "Click tracking", "Rating trends", "Real-time sync"],
@@ -72,9 +65,9 @@ export function RedesignedFeatures() {
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                    <div className="w-9 h-9 bg-[#E8F0FE] rounded-xl flex items-center justify-center">
-                      <feature.icon className="h-4 w-4 text-[#3C83F6]" />
-                    </div>
+                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">
+                      {feature.title}
+                    </h3>
                     <span className={`text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full ${
                       feature.tag === "Pro"
                         ? "bg-[#3C83F6] text-white"
@@ -84,10 +77,6 @@ export function RedesignedFeatures() {
                     </span>
                   </div>
 
-                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">
-                    {feature.title}
-                  </h3>
-
                   <p className="text-sm text-gray-500 leading-relaxed">
                     {feature.description}
                   </p>
@@ -95,7 +84,7 @@ export function RedesignedFeatures() {
                   <div className="grid grid-cols-2 gap-2 pt-1">
                     {feature.bullets.map((item, i) => (
                       <div key={i} className="flex items-center gap-2">
-                        <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0" />
+                        <div className="w-1 h-1 bg-gray-400 rounded-full flex-shrink-0" />
                         <span className="text-gray-600 text-xs">{item}</span>
                       </div>
                     ))}
