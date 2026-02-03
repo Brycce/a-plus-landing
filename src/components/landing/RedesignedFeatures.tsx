@@ -54,28 +54,28 @@ const features = [
 
 export function RedesignedFeatures() {
   return (
-    <section id="features" className="py-24 lg:py-32 bg-white">
+    <section id="features" className="py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-[#3C83F6] font-semibold text-sm tracking-wide uppercase mb-4">Features</p>
-          <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
-            Everything you need to<br />grow your reputation
+        <div className="max-w-2xl mx-auto text-center mb-14">
+          <p className="text-[#3C83F6] font-semibold text-xs tracking-wide uppercase mb-3">Features</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 tracking-tight mb-4">
+            Everything you need to grow your reputation
           </h2>
-          <p className="text-xl text-gray-500 max-w-xl mx-auto">
+          <p className="text-base text-gray-500 max-w-lg mx-auto">
             A complete review automation platform built for local businesses
           </p>
         </div>
 
-        <div className="space-y-20 lg:space-y-32 max-w-6xl mx-auto">
+        <div className="space-y-14 lg:space-y-20 max-w-5xl mx-auto">
           {features.map((feature, index) => (
-            <div key={index} className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div key={index} className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-[#E8F0FE] rounded-2xl flex items-center justify-center">
-                      <feature.icon className="h-6 w-6 text-[#3C83F6]" />
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-9 h-9 bg-[#E8F0FE] rounded-xl flex items-center justify-center">
+                      <feature.icon className="h-4 w-4 text-[#3C83F6]" />
                     </div>
-                    <span className={`text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full ${
+                    <span className={`text-[10px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full ${
                       feature.tag === "Pro"
                         ? "bg-[#3C83F6] text-white"
                         : "bg-emerald-50 text-emerald-700"
@@ -84,19 +84,19 @@ export function RedesignedFeatures() {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl lg:text-[2.25rem] font-bold text-gray-900 tracking-tight">
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight">
                     {feature.title}
                   </h3>
 
-                  <p className="text-lg text-gray-500 leading-relaxed">
+                  <p className="text-sm text-gray-500 leading-relaxed">
                     {feature.description}
                   </p>
 
-                  <div className="grid grid-cols-2 gap-3 pt-2">
+                  <div className="grid grid-cols-2 gap-2 pt-1">
                     {feature.bullets.map((item, i) => (
-                      <div key={i} className="flex items-center gap-2.5">
-                        <div className="w-1.5 h-1.5 bg-[#3C83F6] rounded-full flex-shrink-0" />
-                        <span className="text-gray-600 text-[15px]">{item}</span>
+                      <div key={i} className="flex items-center gap-2">
+                        <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0" />
+                        <span className="text-gray-600 text-xs">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -104,7 +104,7 @@ export function RedesignedFeatures() {
               </div>
 
               <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                <div className="rounded-3xl overflow-hidden shadow-[0_4px_40px_-8px_rgba(0,0,0,0.1)] border border-gray-100">
+                <div className="rounded-2xl overflow-hidden shadow-[0_4px_40px_-8px_rgba(0,0,0,0.1)] border border-gray-100">
                   <StaticMockup
                     type={feature.mockup}
                   />

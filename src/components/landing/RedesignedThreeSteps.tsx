@@ -14,10 +14,10 @@ function SMSAnimation() {
 
   return (
     <div className="flex justify-center">
-      <div className="w-[280px] bg-gray-900 rounded-[2rem] p-2.5 shadow-xl" style={{ height: '500px' }}>
-        <div className="bg-white rounded-[1.5rem] overflow-hidden h-full">
-          <div className="bg-gray-900 h-5 rounded-b-xl mx-auto w-24"></div>
-          <div className="bg-gradient-to-b from-gray-50 to-white p-4 flex-1 overflow-hidden" style={{ height: 'calc(100% - 20px)' }}>
+      <div className="w-[240px] bg-gray-900 rounded-[1.75rem] p-2 shadow-xl" style={{ height: '420px' }}>
+        <div className="bg-white rounded-[1.25rem] overflow-hidden h-full">
+          <div className="bg-gray-900 h-4 rounded-b-lg mx-auto w-20"></div>
+          <div className="bg-gradient-to-b from-gray-50 to-white p-3 flex-1 overflow-hidden" style={{ height: 'calc(100% - 16px)' }}>
             <div className="space-y-3">
               <div className="text-center text-xs text-gray-400 mb-4">Today 2:30 PM</div>
 
@@ -66,46 +66,46 @@ function SMSAnimation() {
 
 export function RedesignedThreeSteps() {
   return (
-    <section id="how-it-works" className="py-20 lg:py-28">
+    <section id="how-it-works" className="py-16 lg:py-20">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <div className="inline-block text-sm font-semibold text-[#3C83F6] px-3 py-1 rounded-full mb-4" style={{ backgroundColor: 'rgba(0, 64, 230, 0.1)' }}>
+        <div className="max-w-2xl mx-auto text-center mb-14">
+          <div className="inline-block text-xs font-semibold text-[#3C83F6] px-2.5 py-1 rounded-full mb-3" style={{ backgroundColor: 'rgba(0, 64, 230, 0.1)' }}>
             How it works
           </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
+          <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight mb-4">
             Three steps to 3x your reviews
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base text-gray-600">
             Whether you're catching up on past customers or collecting reviews from new ones, we've got you covered.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
 
           {/* Step 1: Review Boost — Catch up */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center pb-20 lg:pb-28">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center pb-14 lg:pb-20">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
                   1
                 </div>
-                <span className="text-sm font-semibold text-[#3C83F6] uppercase tracking-wide">Catch up</span>
+                <span className="text-xs font-semibold text-[#3C83F6] uppercase tracking-wide">Catch up</span>
               </div>
 
-              <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
                 Unlock reviews from customers you've already served
               </h3>
 
-              <p className="text-lg text-gray-600 leading-relaxed">
-                You've done hundreds of jobs this year. Most of those customers were happy — they just never left a review. Import your customer list and send review requests in bulk. It's the fastest way to build your reputation overnight.
+              <p className="text-sm text-gray-600 leading-relaxed">
+                You've done hundreds of jobs this year. Most of those customers were happy — they just never left a review. Import your customer list and send review requests in bulk.
               </p>
 
-              <div className="space-y-3 pt-2">
-                {["Import from Jobber or CSV", "Smart filtering so you only reach the right people", "Bulk campaigns that run on autopilot", "Track opens, clicks, and reviews in real time"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-600">{item}</span>
+              <div className="space-y-2 pt-1">
+                {["Import from Jobber or CSV", "Smart filtering for the right people", "Bulk campaigns on autopilot", "Track opens, clicks, and reviews"].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
+                    <span className="text-gray-600 text-sm">{item}</span>
                   </div>
                 ))}
               </div>
@@ -117,28 +117,28 @@ export function RedesignedThreeSteps() {
           </div>
 
           {/* Step 2: Automated SMS — Automate */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center bg-gray-50 -mx-4 px-4 lg:-mx-8 lg:px-8 py-16 lg:py-24 rounded-2xl">
-            <div className="lg:order-2 space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center bg-gray-50 -mx-4 px-4 lg:-mx-6 lg:px-6 py-12 lg:py-16 rounded-2xl">
+            <div className="lg:order-2 space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
                   2
                 </div>
-                <span className="text-sm font-semibold text-[#3C83F6] uppercase tracking-wide">Automate</span>
+                <span className="text-xs font-semibold text-[#3C83F6] uppercase tracking-wide">Automate</span>
               </div>
 
-              <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
-                Set up automatic review requests after every job
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
+                Automatic review requests after every job
               </h3>
 
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Customer didn't leave a review on the spot? We follow up by text at the right time. Set it once, it runs on its own. Multi-touch sequences stop automatically when they review — no annoying over-messaging.
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Customer didn't leave a review on the spot? We follow up by text at the right time. Set it once, it runs on its own. Sequences stop automatically when they review.
               </p>
 
-              <div className="space-y-3 pt-2">
-                {["Triggers automatically after job completion", "Multi-step SMS sequences with smart timing", "Stops the moment they leave a review", "Customize your message templates"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-600">{item}</span>
+              <div className="space-y-2 pt-1">
+                {["Triggers after job completion", "Multi-step SMS sequences", "Stops when they review", "Custom message templates"].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
+                    <span className="text-gray-600 text-sm">{item}</span>
                   </div>
                 ))}
               </div>
@@ -150,35 +150,35 @@ export function RedesignedThreeSteps() {
           </div>
 
           {/* Step 3: QR Codes — Maximize */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-20 lg:pt-28">
-            <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center pt-14 lg:pt-20">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-[#3C83F6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
                   3
                 </div>
-                <span className="text-sm font-semibold text-[#3C83F6] uppercase tracking-wide">Maximize</span>
+                <span className="text-xs font-semibold text-[#3C83F6] uppercase tracking-wide">Maximize</span>
               </div>
 
-              <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
-                Arm your team with QR codes to collect reviews at the door
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
+                Arm your team with QR codes at the door
               </h3>
 
-              <p className="text-lg text-gray-600 leading-relaxed">
-                In-person is the single best way to get a review. 8 out of 10 customers who say "yeah, I'll leave you a review" never do — but if you hand them a QR code while they're still standing there happy with the work, they do it on the spot.
+              <p className="text-sm text-gray-600 leading-relaxed">
+                In-person is the best way to get a review. 8 out of 10 customers who say "I'll leave a review" never do — but hand them a QR code while they're happy and they do it on the spot.
               </p>
 
-              <div className="space-y-3 pt-2">
-                {["Job-specific QR codes for every tech", "Customer scans → lands on Google → leaves review", "Team leaderboards to gamify collection", "Track who's collecting the most reviews"].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-600">{item}</span>
+              <div className="space-y-2 pt-1">
+                {["Job-specific QR codes for every tech", "Scan → Google → review in seconds", "Team leaderboards", "Track who's collecting most reviews"].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
+                    <span className="text-gray-600 text-sm">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="flex justify-center">
-              <div className="rounded-xl overflow-hidden bg-gray-900 shadow-lg" style={{ width: '300px' }}>
+              <div className="rounded-xl overflow-hidden bg-gray-900 shadow-lg" style={{ width: '260px' }}>
                 <video
                   autoPlay
                   loop
