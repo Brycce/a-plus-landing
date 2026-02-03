@@ -36,10 +36,10 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" className="text-[15px] font-medium text-gray-700 hover:text-gray-900" asChild>
-            <Link to="/auth?tab=signin">Sign in</Link>
+            <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
           </Button>
-          <Button className="bg-[#0040E6] hover:bg-[#0033BF] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
-            <Link to="/auth?tab=signup">Get started</Link>
+          <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
+            <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
           </Button>
         </div>
 
@@ -56,10 +56,10 @@ export function RedesignedHeader({ onScrollToPricing }: RedesignedHeaderProps) {
           <Link to="/blog" className="block text-[15px] font-medium text-gray-700 py-2">Blog</Link>
           <div className="pt-4 border-t border-gray-100 space-y-3">
             <Button variant="outline" className="w-full rounded-full" asChild>
-              <Link to="/auth?tab=signin">Sign in</Link>
+              <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
             </Button>
-            <Button className="w-full bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full" asChild>
-              <Link to="/auth?tab=signup">Get started</Link>
+            <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full" asChild>
+              <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
             </Button>
           </div>
         </div>

@@ -25,7 +25,7 @@ function SMSAnimation() {
                 <div className="flex justify-start animate-fade-in">
                   <div className="bg-gray-200 rounded-2xl rounded-tl-sm px-3 py-2 max-w-[85%]">
                     <p className="text-xs text-gray-900">Hi John! Thanks for choosing us. Mind leaving a quick review?</p>
-                    <span className="text-xs text-[#0040E6] underline mt-1 block">Review link →</span>
+                    <span className="text-xs text-[#2563EB] underline mt-1 block">Review link →</span>
                   </div>
                 </div>
               )}
@@ -49,7 +49,7 @@ function SMSAnimation() {
               {step >= 3 && (
                 <>
                   <div className="flex justify-end mt-3 animate-fade-in">
-                    <div className="bg-[#0040E6] text-white rounded-2xl rounded-tr-sm px-3 py-2 max-w-[70%]">
+                    <div className="bg-[#2563EB] text-white rounded-2xl rounded-tr-sm px-3 py-2 max-w-[70%]">
                       <p className="text-xs">Will do! Thanks for the reminder</p>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ export function RedesignedThreeSteps() {
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <div className="inline-block text-sm font-semibold text-[#0040E6] px-3 py-1 rounded-full mb-4" style={{ backgroundColor: 'rgba(0, 64, 230, 0.1)' }}>
+          <div className="inline-block text-sm font-semibold text-[#2563EB] px-3 py-1 rounded-full mb-4" style={{ backgroundColor: 'rgba(0, 64, 230, 0.1)' }}>
             How it works
           </div>
           <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 tracking-tight leading-tight mb-6">
@@ -87,10 +87,10 @@ export function RedesignedThreeSteps() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center pb-20 lg:pb-28">
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#0040E6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-10 h-10 bg-[#2563EB] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   1
                 </div>
-                <span className="text-sm font-semibold text-[#0040E6] uppercase tracking-wide">Catch up</span>
+                <span className="text-sm font-semibold text-[#2563EB] uppercase tracking-wide">Catch up</span>
               </div>
 
               <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
@@ -104,7 +104,7 @@ export function RedesignedThreeSteps() {
               <div className="space-y-3 pt-2">
                 {["Import from Jobber or CSV", "Smart filtering so you only reach the right people", "Bulk campaigns that run on autopilot", "Track opens, clicks, and reviews in real time"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#0040E6] rounded-full flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600">{item}</span>
                   </div>
                 ))}
@@ -120,10 +120,10 @@ export function RedesignedThreeSteps() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center bg-gray-50 -mx-4 px-4 lg:-mx-8 lg:px-8 py-16 lg:py-24 rounded-2xl">
             <div className="lg:order-2 space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#0040E6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-10 h-10 bg-[#2563EB] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   2
                 </div>
-                <span className="text-sm font-semibold text-[#0040E6] uppercase tracking-wide">Automate</span>
+                <span className="text-sm font-semibold text-[#2563EB] uppercase tracking-wide">Automate</span>
               </div>
 
               <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
@@ -137,7 +137,7 @@ export function RedesignedThreeSteps() {
               <div className="space-y-3 pt-2">
                 {["Triggers automatically after job completion", "Multi-step SMS sequences with smart timing", "Stops the moment they leave a review", "Customize your message templates"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#0040E6] rounded-full flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600">{item}</span>
                   </div>
                 ))}
@@ -153,10 +153,10 @@ export function RedesignedThreeSteps() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-20 lg:pt-28">
             <div className="space-y-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#0040E6] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
+                <div className="w-10 h-10 bg-[#2563EB] text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm">
                   3
                 </div>
-                <span className="text-sm font-semibold text-[#0040E6] uppercase tracking-wide">Maximize</span>
+                <span className="text-sm font-semibold text-[#2563EB] uppercase tracking-wide">Maximize</span>
               </div>
 
               <h3 className="text-2xl lg:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
@@ -170,7 +170,7 @@ export function RedesignedThreeSteps() {
               <div className="space-y-3 pt-2">
                 {["Job-specific QR codes for every tech", "Customer scans → lands on Google → leaves review", "Team leaderboards to gamify collection", "Track who's collecting the most reviews"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#0040E6] rounded-full flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#2563EB] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600">{item}</span>
                   </div>
                 ))}

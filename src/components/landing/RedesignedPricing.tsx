@@ -17,7 +17,7 @@ export function RedesignedPricing() {
     <section id="pricing" className="py-24 lg:py-32 bg-[#FAFAFA]">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-[#0040E6] font-semibold text-sm tracking-wide uppercase mb-4">Pricing</p>
+          <p className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase mb-4">Pricing</p>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
             Simple, transparent pricing
           </h2>
@@ -33,14 +33,14 @@ export function RedesignedPricing() {
           >
             <span
               className={`px-5 py-2.5 text-sm font-semibold rounded-full transition-all ${
-                !isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500'
+                !isAnnual ? 'bg-[#2563EB] text-white shadow-sm' : 'text-gray-500'
               }`}
             >
               Monthly
             </span>
             <span
               className={`px-5 py-2.5 text-sm font-semibold rounded-full transition-all flex items-center gap-2 ${
-                isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500'
+                isAnnual ? 'bg-[#2563EB] text-white shadow-sm' : 'text-gray-500'
               }`}
             >
               Annual
@@ -86,7 +86,7 @@ export function RedesignedPricing() {
 
           <div className="relative">
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-              <span className="bg-[#0040E6] text-white px-5 py-1.5 rounded-full text-sm font-semibold shadow-lg shadow-blue-500/20">
+              <span className="bg-[#2563EB] text-white px-5 py-1.5 rounded-full text-sm font-semibold shadow-lg shadow-blue-500/20">
                 Most Popular
               </span>
             </div>
@@ -137,8 +137,8 @@ export function RedesignedPricing() {
             <p className="text-gray-500 text-lg mb-8">
               Start automating your review collection and watch your business grow.
             </p>
-            <Button size="lg" className="bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20" asChild>
-              <Link to="/auth?tab=signup">
+            <Button size="lg" className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20" asChild>
+              <Link to="https://app.aplusreviews.io/auth?tab=signup">
                 Start in 5 minutes
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
@@ -170,7 +170,7 @@ function PricingCard({
   return (
     <div className={`bg-white rounded-3xl p-8 h-full flex flex-col ${
       highlighted
-        ? 'border-2 border-[#0040E6] shadow-xl ring-1 ring-[#0040E6]/10'
+        ? 'border-2 border-[#2563EB] shadow-xl ring-1 ring-[#2563EB]/10'
         : 'border border-gray-200 shadow-sm'
     }`}>
       <div className="text-center mb-8">
@@ -187,15 +187,15 @@ function PricingCard({
       <Button
         className={`w-full rounded-full h-12 text-[15px] font-semibold mb-2 ${
           ctaVariant === 'primary'
-            ? 'bg-[#0040E6] hover:bg-[#0033BF] text-white shadow-lg shadow-blue-500/10'
+            ? 'bg-[#2563EB] hover:bg-[#1D4ED8] text-white shadow-lg shadow-blue-500/10'
             : 'bg-gray-900 hover:bg-gray-800 text-white'
         }`}
         size="lg"
         asChild
       >
-        <Link to="/auth?tab=signup">{cta}</Link>
+        <Link to="https://app.aplusreviews.io/auth?tab=signup">{cta}</Link>
       </Button>
-      <p className={`text-sm text-center mb-8 ${ctaVariant === 'primary' ? 'text-[#0040E6]' : 'text-gray-400'}`}>{ctaNote}</p>
+      <p className={`text-sm text-center mb-8 ${ctaVariant === 'primary' ? 'text-[#2563EB]' : 'text-gray-400'}`}>{ctaNote}</p>
 
       <div className="space-y-3.5 flex-1">
         {sectionLabel && <p className="text-sm font-semibold text-emerald-600 mb-3">{sectionLabel}</p>}

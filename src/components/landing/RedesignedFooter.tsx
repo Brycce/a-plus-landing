@@ -24,7 +24,7 @@ export function RedesignedFooter() {
             <ul className="space-y-3.5">
               <li><a href="#features" className="text-gray-400 hover:text-white transition-colors text-[15px]">Features</a></li>
               <li><a href="#pricing" className="text-gray-400 hover:text-white transition-colors text-[15px]">Pricing</a></li>
-              <li><Link to="/auth?tab=signup" className="text-gray-400 hover:text-white transition-colors text-[15px]">Get Started</Link></li>
+              <li><Link to="https://app.aplusreviews.io/auth?tab=signup" className="text-gray-400 hover:text-white transition-colors text-[15px]">Get Started</Link></li>
             </ul>
           </div>
 

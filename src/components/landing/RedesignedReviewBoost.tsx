@@ -32,7 +32,7 @@ export function RedesignedReviewBoost() {
                 <div className="w-12 h-12 bg-[#FFF0E6] rounded-2xl flex items-center justify-center">
                   <Users className="h-6 w-6 text-amber-600" />
                 </div>
-                <span className="text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-[#0040E6] text-white">
+                <span className="text-xs font-bold tracking-wider uppercase px-3 py-1 rounded-full bg-[#2563EB] text-white">
                   Pro
                 </span>
               </div>
@@ -49,7 +49,7 @@ export function RedesignedReviewBoost() {
                 {steps.map((step, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-10 h-10 bg-white rounded-xl border border-gray-200 flex items-center justify-center flex-shrink-0 shadow-sm">
-                      <step.icon className="w-5 h-5 text-[#0040E6]" />
+                      <step.icon className="w-5 h-5 text-[#2563EB]" />
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-gray-900 mb-1">{step.title}</h3>
@@ -60,10 +60,10 @@ export function RedesignedReviewBoost() {
               </div>
 
               <Button
-                className="bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20"
+                className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full px-8 h-14 text-lg font-semibold shadow-lg shadow-blue-500/20"
                 asChild
               >
-                <Link to="/auth?tab=signup">
+                <Link to="https://app.aplusreviews.io/auth?tab=signup">
                   Start in 5 minutes
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Link>
@@ -83,7 +83,7 @@ export function RedesignedReviewBoost() {
                 <div className="grid grid-cols-3 gap-4">
                   {[
                     { label: "Sent", value: "347", color: "text-gray-900" },
-                    { label: "Clicked", value: "186", color: "text-[#0040E6]" },
+                    { label: "Clicked", value: "186", color: "text-[#2563EB]" },
                     { label: "Reviews", value: "94", color: "text-emerald-600" },
                   ].map((stat, i) => (
                     <div key={i} className="bg-gray-50 rounded-2xl p-4 text-center">
@@ -100,7 +100,7 @@ export function RedesignedReviewBoost() {
                     <span className="font-bold text-gray-900">27%</span>
                   </div>
                   <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-[#0040E6] to-[#3366FF] rounded-full" style={{ width: '27%' }} />
+                    <div className="h-full bg-gradient-to-r from-[#2563EB] to-[#3366FF] rounded-full" style={{ width: '27%' }} />
                   </div>
                 </div>
 
@@ -114,7 +114,7 @@ export function RedesignedReviewBoost() {
                   ].map((review, i) => (
                     <div key={i} className="bg-gray-50 rounded-xl p-3.5 flex items-start gap-3">
                       <div className="w-8 h-8 bg-[#E8F0FE] rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-xs font-bold text-[#0040E6]">{review.name[0]}</span>
+                        <span className="text-xs font-bold text-[#2563EB]">{review.name[0]}</span>
                       </div>
                       <div className="min-w-0">
                         <div className="flex items-center gap-2">

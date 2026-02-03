@@ -23,7 +23,7 @@ function SMSAnimation() {
                 <div className="flex justify-start animate-fade-in">
                   <div className="bg-gray-100 rounded-2xl rounded-tl-sm px-3 py-2 max-w-[85%]">
                     <p className="text-xs text-gray-900">Hi John! Thanks for choosing us. Mind leaving a quick review?</p>
-                    <a href="#" className="text-xs text-[#0040E6] underline mt-1 block">Review link →</a>
+                    <a href="#" className="text-xs text-[#2563EB] underline mt-1 block">Review link →</a>
                   </div>
                 </div>
               )}
@@ -42,7 +42,7 @@ function SMSAnimation() {
               {step >= 3 && (
                 <>
                   <div className="flex justify-end mt-3 animate-fade-in">
-                    <div className="bg-[#0040E6] text-white rounded-2xl rounded-tr-sm px-3 py-2 max-w-[70%]">
+                    <div className="bg-[#2563EB] text-white rounded-2xl rounded-tr-sm px-3 py-2 max-w-[70%]">
                       <p className="text-xs">Done! Left you 5 stars</p>
                     </div>
                   </div>
@@ -64,7 +64,7 @@ const steps = [
     title: "Capture reviews on the spot",
     description: "Every job gets a unique QR code. Customers scan right after completion and leave a review while the experience is still fresh.",
     color: "bg-[#E8F0FE]",
-    iconColor: "text-[#0040E6]",
+    iconColor: "text-[#2563EB]",
   },
   {
     icon: MessageSquare,
@@ -81,7 +81,7 @@ export function RedesignedHowItWorks() {
     <section id="how-it-works" className="py-24 lg:py-32 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-[#0040E6] font-semibold text-sm tracking-wide uppercase mb-4">How it works</p>
+          <p className="text-[#2563EB] font-semibold text-sm tracking-wide uppercase mb-4">How it works</p>
           <h2 className="text-4xl lg:text-[3.25rem] font-bold text-gray-900 tracking-tight mb-6">
             Two simple steps to<br />more 5-star reviews
           </h2>

@@ -23,7 +23,7 @@ export function RedesignedHero() {
           <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.08] font-bold text-gray-900 tracking-tight mb-6">
             Get more reviews
             <br />
-            <span className="text-[#0040E6]">the minute the job's done</span>
+            <span className="text-[#2563EB]">the minute the job's done</span>
           </h1>
 
           <p className="text-xl lg:text-[22px] text-gray-500 leading-relaxed max-w-2xl mx-auto mb-10">
@@ -33,10 +33,10 @@ export function RedesignedHero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button
               size="lg"
-              className="bg-[#0040E6] hover:bg-[#0033BF] text-white text-lg font-semibold rounded-full px-8 h-14 shadow-lg shadow-blue-500/20"
+              className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-lg font-semibold rounded-full px-8 h-14 shadow-lg shadow-blue-500/20"
               asChild
             >
-              <Link to="/auth?tab=signup">
+              <Link to="https://app.aplusreviews.io/auth?tab=signup">
                 Start in 5 minutes
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
@@ -70,7 +70,7 @@ export function RedesignedHero() {
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-gray-900/20 to-transparent" />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                      <Play className="w-8 h-8 md:w-10 md:h-10 text-[#0040E6] ml-1" fill="currentColor" />
+                      <Play className="w-8 h-8 md:w-10 md:h-10 text-[#2563EB] ml-1" fill="currentColor" />
                     </div>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white text-center">

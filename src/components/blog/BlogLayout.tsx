@@ -33,10 +33,10 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
 
           <div className="hidden md:flex items-center gap-3">
             <Button variant="ghost" className="text-[15px] font-medium text-gray-700 hover:text-gray-900" asChild>
-              <Link to="/auth?tab=signin">Sign in</Link>
+              <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
             </Button>
-            <Button className="bg-[#0040E6] hover:bg-[#0033BF] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
-              <Link to="/auth?tab=signup">Get started</Link>
+            <Button className="bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[15px] font-semibold rounded-full px-6 h-10" asChild>
+              <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
             </Button>
           </div>
 
@@ -53,10 +53,10 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
             <Link to="/blog" className="block text-[15px] font-medium text-gray-700 py-2" onClick={() => setMobileOpen(false)}>Blog</Link>
             <div className="pt-4 border-t border-gray-100 space-y-3">
               <Button variant="outline" className="w-full rounded-full" asChild>
-                <Link to="/auth?tab=signin">Sign in</Link>
+                <Link to="https://app.aplusreviews.io/auth?tab=signin">Sign in</Link>
               </Button>
-              <Button className="w-full bg-[#0040E6] hover:bg-[#0033BF] text-white rounded-full" asChild>
-                <Link to="/auth?tab=signup">Get started</Link>
+              <Button className="w-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full" asChild>
+                <Link to="https://app.aplusreviews.io/auth?tab=signup">Get started</Link>
               </Button>
             </div>
           </div>
@@ -78,7 +78,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
           <article className="mb-12">
             <header className="mb-12">
               <div className="flex items-center gap-3 mb-6 text-sm">
-                <span className="bg-[#E8F0FE] text-[#0040E6] px-3 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">
+                <span className="bg-[#E8F0FE] text-[#2563EB] px-3 py-1 rounded-full font-semibold text-xs uppercase tracking-wider">
                   {post.category}
                 </span>
                 <div className="flex items-center gap-1 text-gray-400">
@@ -120,7 +120,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
               </div>
             </header>
 
-            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#0040E6] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-li:text-gray-600">
+            <div className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-headings:tracking-tight prose-p:text-gray-600 prose-p:leading-relaxed prose-a:text-[#2563EB] prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-li:text-gray-600">
               {children}
             </div>
           </article>
@@ -148,7 +148,7 @@ const BlogLayout = ({ children, post, showBackButton = false }: BlogLayoutProps)
               <ul className="space-y-3.5">
                 <li><Link to="/#features" className="text-gray-400 hover:text-white transition-colors text-[15px]">Features</Link></li>
                 <li><Link to="/#pricing" className="text-gray-400 hover:text-white transition-colors text-[15px]">Pricing</Link></li>
-                <li><Link to="/auth?tab=signup" className="text-gray-400 hover:text-white transition-colors text-[15px]">Get Started</Link></li>
+                <li><Link to="https://app.aplusreviews.io/auth?tab=signup" className="text-gray-400 hover:text-white transition-colors text-[15px]">Get Started</Link></li>
               </ul>
             </div>
 
