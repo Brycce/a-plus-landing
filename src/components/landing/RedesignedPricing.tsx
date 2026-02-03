@@ -26,22 +26,22 @@ export function RedesignedPricing() {
 
         {/* Toggle */}
         <div className="flex justify-center mb-10">
-          <div className="inline-flex items-center bg-white rounded-full p-1 border border-gray-200 shadow-sm">
-            <button
-              type="button"
+          <button
+            type="button"
+            onClick={() => setIsAnnual(!isAnnual)}
+            className="inline-flex items-center bg-white rounded-full p-1 border border-gray-200 shadow-sm cursor-pointer"
+          >
+            <span
               className={`px-5 py-2.5 text-sm font-semibold rounded-full transition-all ${
-                !isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                !isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500'
               }`}
-              onClick={() => setIsAnnual(false)}
             >
               Monthly
-            </button>
-            <button
-              type="button"
+            </span>
+            <span
               className={`px-5 py-2.5 text-sm font-semibold rounded-full transition-all flex items-center gap-2 ${
-                isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                isAnnual ? 'bg-[#0040E6] text-white shadow-sm' : 'text-gray-500'
               }`}
-              onClick={() => setIsAnnual(true)}
             >
               Annual
               <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
@@ -49,8 +49,8 @@ export function RedesignedPricing() {
               }`}>
                 Save 25%
               </span>
-            </button>
-          </div>
+            </span>
+          </button>
         </div>
 
         {/* Enterprise bar */}
