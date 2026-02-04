@@ -14,10 +14,13 @@ export function RedesignedHero() {
 
       <div className="container mx-auto px-4 pt-16 pb-20 lg:pt-20 lg:pb-24 relative">
         <div className="max-w-3xl mx-auto text-center">
-          <Link to="/blog/google-reviews-beat-competition" className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200/60 rounded-full px-3 py-1.5 mb-6 shadow-sm hover:shadow-md transition-shadow">
-            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-xs font-medium text-gray-700">How 38 reviews can beat 75% of your competition</span>
-            <ArrowRight className="w-3 h-3 text-gray-400" />
+          <Link to="/blog/38-google-reviews-beat-competition" className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-gray-200/60 rounded-full px-3 py-1.5 mb-6 shadow-sm hover:shadow-md transition-shadow">
+            <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse flex-shrink-0" />
+            <span className="text-xs font-medium text-gray-700">
+              <span className="hidden sm:inline">How 38 reviews can beat 75% of your competition</span>
+              <span className="sm:hidden">38 reviews can beat 75% of competitors</span>
+            </span>
+            <ArrowRight className="w-3 h-3 text-gray-400 flex-shrink-0" />
           </Link>
 
           <h1 className="text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] font-bold text-gray-900 tracking-tight mb-4">
