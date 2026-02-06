@@ -93,15 +93,15 @@ export function RedesignedThreeSteps() {
               </div>
 
               <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
-                Unlock reviews from customers you've already served
+                Turn past customers into new reviews
               </h3>
 
               <p className="text-sm text-gray-600 leading-relaxed">
-                You've done hundreds of jobs this year. Most of those customers were happy — they just never left a review. Import your customer list and send review requests in bulk.
+                Import your customer list and send bulk review requests. Happy customers who never left a review will finally do it.
               </p>
 
               <div className="space-y-2 pt-1">
-                {["Import from Jobber or CSV", "Smart filtering for the right people", "Bulk campaigns on autopilot", "Track opens, clicks, and reviews"].map((item, i) => (
+                {["Import from Jobber or CSV", "Bulk campaigns on autopilot", "Track opens, clicks, and reviews"].map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600 text-sm">{item}</span>
@@ -126,15 +126,15 @@ export function RedesignedThreeSteps() {
               </div>
 
               <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
-                Automatic review requests after every job
+                Automatic follow-ups that get reviews
               </h3>
 
               <p className="text-sm text-gray-600 leading-relaxed">
-                Customer didn't leave a review on the spot? We follow up by text at the right time. Set it once, it runs on its own. Sequences stop automatically when they review.
+                Set it once, it runs on its own. SMS follow-ups go out after every job and stop when they leave a review.
               </p>
 
               <div className="space-y-2 pt-1">
-                {["Triggers after job completion", "Multi-step SMS sequences", "Stops when they review", "Custom message templates"].map((item, i) => (
+                {["Triggers after job completion", "Multi-step SMS sequences", "Stops when they review"].map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600 text-sm">{item}</span>
@@ -159,15 +159,15 @@ export function RedesignedThreeSteps() {
               </div>
 
               <h3 className="text-xl lg:text-2xl font-bold text-gray-900 tracking-tight leading-tight">
-                Arm your team with QR codes at the door
+                Capture reviews on the spot with QR codes
               </h3>
 
               <p className="text-sm text-gray-600 leading-relaxed">
-                In-person is the best way to get a review. 8 out of 10 customers who say "I'll leave a review" never do — but hand them a QR code while they're happy and they do it on the spot.
+                Hand customers a QR code while they're happy. One scan takes them straight to Google to leave a review in seconds.
               </p>
 
               <div className="space-y-2 pt-1">
-                {["Job-specific QR codes for every tech", "Scan → Google → review in seconds", "Team leaderboards", "Track who's collecting most reviews"].map((item, i) => (
+                {["QR codes for every tech", "Scan → Google → review in seconds", "Team leaderboards"].map((item, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <div className="w-1 h-1 bg-[#3C83F6] rounded-full flex-shrink-0"></div>
                     <span className="text-gray-600 text-sm">{item}</span>
