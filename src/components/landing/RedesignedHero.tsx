@@ -40,12 +40,6 @@ export function RedesignedHero() {
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Link>
             </Button>
-            <Button
-              variant="outline"
-              className="font-semibold rounded-full px-6 h-11 border-gray-300 text-gray-700 hover:bg-gray-50"
-            >
-              View demo
-            </Button>
           </div>
 
           <p className="text-xs text-gray-400">No credit card required</p>
